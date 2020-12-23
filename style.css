@@ -30,6 +30,7 @@ nav{
 #navG{
     display: flex;
     align-items: center;
+    /* background-color: #3dc1a7; */
 }
 
 #search input[type="text"]{
@@ -125,10 +126,56 @@ nav{
     grid-area: footer;
 }
 
+.active{
+    display: block;
+}
+
 @media screen and (max-width: 850px){
+    nav{
+        justify-content: center;
+        height: 45px;
+    }
     .burger {
         display: block;
         color: #333;
         font-size: 30px;
+        position: absolute;
+        top: 0;
+        left: 25px;
+        cursor: pointer;
     }
+
+    aside {
+        display: none;
+        z-index: 100;
+        position: absolute;
+        top: 45px;
+        width: 100%;
+    }
+    #navG {
+        background: #627d97;
+        flex-direction: column;
+    }
+    #dlogo img{
+        display: none;
+    }
+    #listG ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #search input[type="text"]{
+        background-color: yellow;
+        margin-top: 15px;
+        
+    }
+    
+
+
+
+    #navD a {
+        /* background-color: #3dc1a7; */
+        font-size: 14px;
+    }
+
 }
