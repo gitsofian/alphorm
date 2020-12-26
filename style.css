@@ -2,6 +2,8 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    margin: auto;
 }
 
 #website{
@@ -101,26 +103,85 @@ nav{
     color: #333;
 }
 
+                                    /* section 1 */
 #section1{
-    background-color: gray;
+    background-color: #f2f2f2;
     grid-area: section1;
 }
+#section1 .box1{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: yellow; */
+}
+#section1 h1{
+    text-align: center;
+}
+#section1 h1 span {
+    font-weight: lighter;
+    color: #aaa;
+}
+
+#section1 .box1a{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section1 .box-photo{
+    margin-left: 20px;
+}
+
+#section1 .box-photo img{
+    height: 200px;
+    border: 2px solid #f2f2f2;
+}
+#section1 .box-photo img:hover{
+    border: 2px solid red;
+}
+
+#section1 .box-text{
+    width: 75%;
+    margin-right: 20px;
+    
+}
+#section1 .box-text p{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    color: #333;
+}
+
+
+
+                                    /* section 2 */
+
 #section2{
     background-color: blueviolet;
     grid-area: section2;
 }
+
+
+                                    /* section 3*/
 #section3{
     background-color: green;
     grid-area: section3;
 }
+
+                                    /* section 4 */
 #section4{
     background-color: yellowgreen;
     grid-area: section4;
 }
+
+                                    /* section 5 */
 #section5{
     background-color: yellow;
     grid-area: section5;
 }
+
+                                    /* footer */
 #footer{
     background-color: blue;
     grid-area: footer;
@@ -130,7 +191,10 @@ nav{
     display: block;
 }
 
-@media screen and (max-width: 850px){
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+@media screen and (max-width: 955px){
     nav{
         justify-content: center;
         height: 45px;
@@ -176,6 +240,20 @@ nav{
     #navD a {
         /* background-color: #3dc1a7; */
         font-size: 14px;
+    }
+
+                                        /* section 1 */
+    #section1 h1 span {
+        font-size: 14px;
+    }
+    #section1 .box1a{
+        flex-direction: column;
+        align-items: center;
+    }
+    #section1 .box-text p[class="title"]{
+        color: #2ec2ac;
+        font-weight: bold;
+        
     }
 
 }
