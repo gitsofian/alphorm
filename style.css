@@ -267,9 +267,47 @@ img{
 
                                     /* section 5 */
 #section5{
-    background-color: yellow;
+    background-color: #ffffff;
     grid-area: section5;
+    margin-bottom: 35px;
 }
+#section5 .title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#section5 #box-support{
+    display: flex;
+    justify-content: space-around;
+}
+
+#section5 img{
+    height: 50px;
+}
+
+#section5 .email {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: none;    
+}
+
+#section5 .phone {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#section5 .help {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#section5 a {
+    text-decoration: none;
+}
+
 
                                     /* footer */
 #footer{
@@ -344,6 +382,10 @@ img{
         color: #2ec2ac;
         font-weight: bold;
         
+    }
+
+    #section5 #box-support{
+        flex-direction: column;
     }
 
 }
