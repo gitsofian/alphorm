@@ -311,8 +311,103 @@ img{
 
                                     /* footer */
 #footer{
-    background-color: blue;
+    background-color: #314456;
     grid-area: footer;
+    border-top: 5px solid #1abc9c;
+    /* margin-bottom: 30px; */
+    padding: 20px;
+}
+#footer #title {
+    color: #bbc4c9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#footer p{
+    color: #bbc4c9;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#footer a{
+    color: #bbc4c9;
+    text-decoration: none;
+}
+
+#footer a:hover{
+    text-decoration: underline;
+}
+
+#box-footer{
+    display: flex;
+    justify-content: space-around;
+    color: #bbc4c9;
+}
+#box-footer p{
+    color: #1aa271;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#box-footer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+#box-footer li {
+    padding: 3px;
+    font-size: 13px;
+}
+
+#box-footer #shortcut{
+    
+}
+#box-footer #moreinfo{
+    
+}
+
+#box-footer #sm-payement{
+    width: 40%;
+}
+#box-footer #sm-payement p{
+    font-size: 15px;
+    color: #bbc4c9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-transform: initial;
+}
+
+#box-footer #fellowing-payement{
+    display: flex;
+    justify-content: space-around;
+}
+#box-footer #fellowing-payement p{
+    font-style: normal;
+    color: #1aa271;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#box-footer #payement img{
+    height: 25px;
+}
+#box-footer #payement p{
+    
+}
+
+#footer #foot{
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+#footer #foot .foot1 p{
+    font-size: 14px;
+    color: #bbc4c9;
+}
+#footer #foot .foot2 {
+    font-size: 12px;
+    color: #bbc4c9;
 }
 
 .active{
